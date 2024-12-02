@@ -1,0 +1,19 @@
+ERROR - 2024-10-16 00:47:38 --> mysqli_sql_exception: Table 'tb_produk' already exists in C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\web_pl1\ci4kasir\app\Database\Migrations\2024-10-16-002940_TbProduk.php(34): CodeIgniter\Database\Forge->createTable('tb_produk')
+#5 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\TbProduk->up()
+#6 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#14 C:\web_pl1\ci4kasir\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 C:\web_pl1\ci4kasir\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
