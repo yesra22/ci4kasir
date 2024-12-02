@@ -30,7 +30,7 @@
                             <th>No</th>
                             <th>Nama Produk</th>
                             <th>Harga</th>
-                            <th>Stok</th>
+                            <th>Stokk</th>
                         </tr>
                     </thead>
                     <tbody>
